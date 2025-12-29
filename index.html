@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="bmi-box">
+    <h2>BMI Calculator</h2>
+    <p id="pTag">Normal BMI range: 18.5 – 24.9</p>
+
+    <input type="number" id="weight" placeholder="Enter weight (kg)">
+    <input type="number" id="height" placeholder="Enter height (cm)">
+
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <button onclick="clearBMI()">Clear</button>
+
+
+    <p id="result"></p>
+    <p id="resultAfter"></p>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
