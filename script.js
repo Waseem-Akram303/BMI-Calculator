@@ -4,9 +4,21 @@ function calculateBMI() {
   const result = document.getElementById("result");
   const resultAfter = document.getElementById("resultAfter");
 
-  if (weight === "" || height === "") {
+  if (weight === "" && height === "") {
     result.style.color = "red";
     result.textContent = "Please enter weight and height";
+    return;
+  }
+
+  if (weight === "")  {
+    result.style.color = "red";
+    result.textContent = "Please enter weight";
+    return;
+  }
+
+   if (height === "")  {
+    result.style.color = "red";
+    result.textContent = "Please enter height";
     return;
   }
 
